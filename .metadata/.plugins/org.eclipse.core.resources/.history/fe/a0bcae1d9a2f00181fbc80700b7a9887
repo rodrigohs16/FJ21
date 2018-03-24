@@ -87,7 +87,6 @@ public class ContatoDAO {
 			System.out.println("Email: " + contato.getEmail());
 			System.out.println("Endereco: " + contato.getEndereco());
 			System.out.println("Data Nascimento: " + contato.getDataNascimento().getTime());
-			System.out.println("========================================");
 		}
 	}
 }
