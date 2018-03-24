@@ -28,8 +28,6 @@ public class TestaConexao {
 		
 		System.out.println("Gravado!");
 		
-		contatoDao.close();
-		
 		
 		
 
