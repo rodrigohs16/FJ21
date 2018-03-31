@@ -29,14 +29,14 @@
 					<th>Data de Nascimento</th>
 				</tr>
 			<tbody>
-				<c:forEach var="contato" items="${dao.lista}">
+				<c:forEach var="contato" items="${dao.lista}"/>
 				<%--<%for(Contato contato : contatos){ --%>
 				<tr>
 					<td>${contato.id}</td>
 					<td>${contato.nome}</td>
 					<td>${contato.email}</td>
 					<td>${contato.endereco}</td>
-					<td><fmt:formatDate value="${contato.dataNascimento.time}" pattern="dd/MM/yyyy"/></td>
+					<td><fmt:formatDate value="${contato.dataNascimento.time}" pattern="dd/MM/yyyy"</td>
 					
 					<%--<td><%=contato.getId()</td>
 					<td><%=contato.getNome() %></td>
@@ -44,7 +44,7 @@
 					<td><%=contato.getEndereco() %></td>
 					<td><%=contato.getDataNascimento().getTime()%></td>--%>
 				</tr>
-				</c:forEach>
+				
 					
 			</tbody>
 		</table>

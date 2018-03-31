@@ -29,7 +29,7 @@
 					<th>Data de Nascimento</th>
 				</tr>
 			<tbody>
-				<c:forEach var="contato" items="${dao.lista}">
+				<c:forEach var="contato" items="${dao.lista}"/>
 				<%--<%for(Contato contato : contatos){ --%>
 				<tr>
 					<td>${contato.id}</td>
@@ -44,7 +44,7 @@
 					<td><%=contato.getEndereco() %></td>
 					<td><%=contato.getDataNascimento().getTime()%></td>--%>
 				</tr>
-				</c:forEach>
+				
 					
 			</tbody>
 		</table>
