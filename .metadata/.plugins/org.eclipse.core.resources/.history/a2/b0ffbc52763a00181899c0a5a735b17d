@@ -1,0 +1,29 @@
+<%@ taglib uri="htt
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FJ21 - Adiciona Contato</title>
+</head>
+<body>
+<h1>Adiciona Contato</h1>
+<hr />
+
+<form action="adicionaContato" method="POST">
+Nome: 
+<input type="text" name="nome" /> <br>
+
+Email: 
+<input type="email" name="email" /> <br>
+
+Endereco:
+<input type="text" name="endereco" /> <br>
+
+Data Nascimento:
+<input type="text" name="dataNascimento" /> <br>
+
+<button>Gravar</button>
+
+</form>
+</body>
+</html>

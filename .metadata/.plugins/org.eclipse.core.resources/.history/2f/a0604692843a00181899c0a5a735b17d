@@ -1,0 +1,45 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="tagcustom" %>
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>FJ21 - Adiciona Contato</title>
+	
+	<link href="css/jquery.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+
+	</head>
+	
+	<body>
+		<c:import url="cabecalho.jsp"></c:import>
+		<h3>Adicione um contato:</h3>
+
+		<table align="center">
+		<form action="adicionaContato" method="POST">
+			<tr>
+			<td>Nome: 
+			<input type="text" name="nome" /> <br>
+			</td>
+			
+			<td>Email: 
+			<input type="email" name="email" /> <br>
+			</td>
+			
+			<td>Endereco:
+			<input type="text" name="endereco" /> <br>
+			</td>
+			
+			<td>Data Nascimento:
+			<%--<input type="text" name="dataNascimento" /> <br> --%>
+			<tagcustom:campoData data="dataNascimento" /> <br>
+			</td>
+			
+			<button>Gravar</button>
+			</tr>
+		</table>
+		</form>
+		<c:import url="rodape.jsp"></c:import>
+	</body>
+</html>

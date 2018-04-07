@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="br.com.caelum.jdbc.ConnectionFactory"/>
 <fullyQualifiedTypeName name="com.mysql.jdbc.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="br.com.caelum.model.Contatos"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -14,6 +13,14 @@
 <fullyQualifiedTypeName name="br.com.caelum.jdbc.dao.ContatoDAO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="br.com.caelum.model.Contato"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.sun.net.httpserver.HttpServer"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="br.com.caelum.agenda.modelo.Contato"/>
+<fullyQualifiedTypeName name="br.com.caelum.agenda.dao.ContatoDao"/>
 </qualifiedTypeNameHistroy>

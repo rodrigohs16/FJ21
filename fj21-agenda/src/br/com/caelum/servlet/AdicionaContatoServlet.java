@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -54,8 +55,10 @@ public class AdicionaContatoServlet extends HttpServlet {
 			dao.adiciona(contato);
 			
 			// Imprime
-			pw.println("<html><body>" + contato.getNome() + " adicionado com sucesso!");
-			pw.println("</body></html>");
+			req.getRequestDispatcher("/contato-adicionado.jsp").forward(req, resp);
+			
+			//pw.println("<html><body>" + contato.getNome() + " adicionado com sucesso!");
+			//pw.println("</body></html>");
 
 		} catch (ParseException e) {
 			pw.println("Erro de conversao de data");
