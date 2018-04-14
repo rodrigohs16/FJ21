@@ -17,7 +17,7 @@
 <title>Lista Contatos</title>
 </head>
 <body>
-	<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao" />
+	<%--<jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao" /> --%>
 	<%--Esta comentando o codigo usando o '<%--' 
 			<%//ContatoDao dao = new ContatoDao(); 
 			List<Contato> contatos = dao.getLista();--%>
@@ -34,7 +34,7 @@
 				<th>Data de Nascimento</th>
 			</tr>
 		<tbody>
-			<c:forEach var="contato" items="${dao.lista}">
+			<c:forEach var="contato" items="${contatos}">
 				<%--<%for(Contato contato : contatos){ --%>
 				<tr>
 					<td>${contato.id}</td>
@@ -65,6 +65,10 @@
 					<td>${contato.endereco}</td>
 					<td><fmt:formatDate value="${contato.dataNascimento.time}"
 							pattern="dd/MM/yyyy" /></td>
+							
+					<td> <a href="mvc?logica=RemoveContatoLogica&id=${contato.id }">Remover</a>
+					<td> <a href="mvc?logica=AlteraContatoLogica&id=${contato.id }">Alterar</a>
+					</td>
 
 					<%--<td><%=contato.getId()</td>
 					<td><%=contato.getNome() %></td>

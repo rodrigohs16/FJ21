@@ -16,7 +16,7 @@
 		<c:import url="cabecalho.jsp"></c:import>
 		<h3>Adicione um contato:</h3>
 		
-		<form action="adicionaContato" method="POST">
+		<form action="mvc?logica=AdicionaContatoLogica" method="POST">
 		
 		<table align="center">
 		
