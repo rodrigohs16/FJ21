@@ -2,11 +2,22 @@ package br.com.caelum.tarefas.modelo;
 
 import java.util.Calendar;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import com.sun.istack.internal.NotNull;
 
+@Entity
 public class Tarefa {
+	
+	@Id
+	@GeneratedValue
 	private Long id;
 	
 	@Size(min=5, max=255, message="Voce deve colocar no minimo 5 caracteres e maximo 255")
@@ -14,6 +25,9 @@ public class Tarefa {
 	private String descricao;
 	
 	private boolean finalizado;
+	
+	@Temporal(TemporalType.DATE)
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	private Calendar dataFinalizacao;
 
 	public Long getId() {
